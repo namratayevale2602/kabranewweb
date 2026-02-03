@@ -6,6 +6,7 @@ import {
   FaTwitter,
   FaYoutube,
   FaPinterest,
+  FaWhatsapp,
 } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import {
@@ -13,26 +14,28 @@ import {
   IoCallOutline,
   IoTimeOutline,
 } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  // Updated categories based on Navbar structure
   const categories = [
-    "Designer Sarees",
-    "Silk Sarees",
-    "Bridal Collection",
-    "Paithani Sarees",
-    "Lehengas",
-    "Party Wear",
-    "Kanjeevaram",
-    "Cotton Sarees",
+    { label: "Kanjeevaram Sarees", slug: "sarees" },
+    { label: "Banarasi Sarees", slug: "sarees" },
+    { label: "Designer Sarees", slug: "sarees" },
+    { label: "Paithani Sarees", slug: "sarees" },
+    { label: "Lehengas", slug: "lehengas" },
+    { label: "Salwar Suits", slug: "salwarsuite" },
+    { label: "Party Wear", slug: "lehengas" },
+    { label: "Bridal Collection", slug: "sarees" },
   ];
 
   const quickLinks = [
-    { label: "Home", href: "/" },
-    { label: "Collections", href: "/collections" },
-    { label: "About Us", href: "/about" },
-    { label: "Testimonials", href: "/testimonials" },
-    { label: "Contact", href: "/contact" },
+    { label: "Home", action: () => navigate("/") },
+    { label: "Collections", action: () => navigate("/Categorydetail/sarees") },
+    { label: "About Us", action: () => navigate("/about") },
+    { label: "Contact", action: () => navigate("/contact") },
   ];
 
   const socialIcons = [
@@ -49,18 +52,17 @@ const Footer = () => {
       color: "hover:text-pink-600",
     },
     {
-      icon: FaTwitter,
-      label: "Twitter",
-      url: "#",
+      icon: FaWhatsapp,
+      label: "Whatsapp",
+      url: "https://wa.me/919890533709?text=Hello Kabra Emporium, I would like to know more about your collections.",
       color: "hover:text-blue-400",
     },
-    {
-      icon: FaPinterest,
-      label: "Pinterest",
-      url: "#",
-      color: "hover:text-red-600",
-    },
   ];
+
+  // Function to handle category navigation
+  const handleCategoryClick = (slug) => {
+    navigate(`/Categorydetail/${slug}`);
+  };
 
   return (
     <motion.footer
@@ -123,15 +125,15 @@ const Footer = () => {
                 whileHover={{ x: 5 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                <Link
-                  to={link.href}
-                  className="text-gray-300 hover:text-amber-300 transition-colors duration-300 flex items-center gap-2 group"
+                <button
+                  onClick={link.action}
+                  className="text-gray-300 hover:text-amber-300 transition-colors duration-300 flex items-center gap-2 group w-full text-left"
                 >
                   <span className="w-1.5 h-1.5 rounded-full bg-amber-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                   <span className="group-hover:translate-x-1 transition-transform duration-300">
                     {link.label}
                   </span>
-                </Link>
+                </button>
               </motion.li>
             ))}
           </ul>
@@ -167,17 +169,15 @@ const Footer = () => {
                 whileHover={{ x: 5 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                <Link
-                  to={`/collections/${category
-                    .toLowerCase()
-                    .replace(/\s+/g, "-")}`}
-                  className="text-gray-300 hover:text-amber-300 transition-colors duration-300 flex items-center gap-2 group"
+                <button
+                  onClick={() => handleCategoryClick(category.slug)}
+                  className="text-gray-300 hover:text-amber-300 transition-colors duration-300 flex items-center gap-2 group w-full text-left"
                 >
                   <span className="w-1.5 h-1.5 rounded-full bg-amber-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                   <span className="group-hover:translate-x-1 transition-transform duration-300">
-                    {category}
+                    {category.label}
                   </span>
-                </Link>
+                </button>
               </motion.li>
             ))}
           </ul>
@@ -198,7 +198,7 @@ const Footer = () => {
             <div className="relative rounded-xl overflow-hidden shadow-lg group">
               <iframe
                 title="Kabra Emporium Location"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15015.654000839273!2d73.75400732954571!3d20.008474559323567!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeb85fab84bf9%3A0x5f2e809d4e352b3b!2sKabra%20Emporium!5e1!3m2!1sen!2sin!4v1768134378635!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.1607545696947!2d73.77421427495118!3d20.001766722258893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeba0cbc986b9%3A0x459f1d5f566872ed!2sKabra%20Emporium%20%7C%20Best%20Sarees%20%7C%20Designer%20Sarees%20%7C%20Nashik!5e0!3m2!1sen!2sin!4v1770092560073!5m2!1sen!2sin"
                 className="w-full h-48 sm:h-52 md:h-30 group-hover:scale-105 transition-transform duration-500"
                 loading="lazy"
                 style={{ border: 0 }}
@@ -237,8 +237,8 @@ const Footer = () => {
                     )
                   }
                 >
-                  PLOT NO -380/09, 657/B/380, PADMAVISHWA CENTER, OLD PANDIT
-                  COLONY, NASHIK - 422002
+                  Padma-vishwa Centre Old Pandit Colony Sharanpur Road, opp.
+                  Rajiv Gandhi Bhavan, Nashik, Maharashtra 422002
                 </span>
               </li>
               <li className="flex items-center gap-3">
@@ -271,13 +271,13 @@ const Footer = () => {
 
             {/* Quick Contact Button */}
             <div className="mt-4">
-              <Link
-                to="/contact"
+              <button
+                onClick={() => navigate("/contact")}
                 className="inline-flex items-center gap-2 bg-amber-600 text-white px-4 py-2.5 rounded-lg hover:bg-amber-700 transition-all duration-300 border border-amber-500 hover:border-amber-600 w-full justify-center text-sm font-medium shadow-lg hover:shadow-xl"
               >
                 <MdOutlineEmail size={16} />
                 Quick Inquiry
-              </Link>
+              </button>
             </div>
           </div>
         </motion.div>
@@ -292,19 +292,18 @@ const Footer = () => {
             . All Rights Reserved.
           </p>
           <span className="hidden sm:inline text-gray-600">|</span>
-          <a
-            href="/terms-and-conditions"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={() => navigate("/terms-and-conditions")}
+            className="hover:text-amber-300 transition-colors duration-300"
           >
             Terms & Condition
-          </a>
-          <a href="/privacy-policy" target="_blank" rel="noopener noreferrer">
+          </button>
+          <button
+            onClick={() => navigate("/privacy-policy")}
+            className="hover:text-amber-300 transition-colors duration-300"
+          >
             Privacy Policy
-          </a>
-          {/* <p className=" text-gray-500">
-            Est. 1984 • Legacy of Elegance & Tradition
-          </p> */}
+          </button>
         </div>
       </div>
     </motion.footer>

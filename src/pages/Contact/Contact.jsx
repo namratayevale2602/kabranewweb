@@ -47,7 +47,7 @@ const ContactPage = () => {
       email: "connect@kabraemporium.com",
       timings: "Mon-Sat: 10:00 AM - 7:00 PM",
       mapUrl:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.7852832528936!2d73.76411747497926!3d19.997212181406668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeb84b8a16f99%3A0x2cf5d5ac4ce6e90c!2sNashik%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.1607545696947!2d73.77421427495118!3d20.001766722258893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeba0cbc986b9%3A0x459f1d5f566872ed!2sKabra%20Emporium%20%7C%20Best%20Sarees%20%7C%20Designer%20Sarees%20%7C%20Nashik!5e0!3m2!1sen!2sin!4v1770092560073!5m2!1sen!2sin",
       coordinates: "19.9972° N, 73.7907° E",
     },
     {
@@ -59,23 +59,23 @@ const ContactPage = () => {
       ],
       phone: "+91 98905 33709",
       email: "connect@kabraemporium.com",
-      timings: "Mon-Sat: 10:00 AM - 9:00 PM, Sun: 11:00 AM - 7:00 PM",
+      timings: "Mon-Sat: 10:00 AM - 7:00 PM",
       mapUrl:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.261122979978!2d72.828142974978!3d19.054387482069256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c96a34dc4401%3A0x3f4a2cd96e5c9c0!2sBandra%20West%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7498.286454617677!2d73.7659299373627!3d20.002502569092357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeb0056ee5b9d%3A0x9778019c511fcdfb!2sKabra%20The%20Fashionista%20Saree%20%7C%20Ghagra%20%7C%20Dress!5e0!3m2!1sen!2sin!4v1770092795618!5m2!1sen!2sin",
       coordinates: "19.0544° N, 72.8281° E",
     },
     {
       id: 2,
-      title: "Pandit Colony Showroom",
+      title: "Pandit Colony - Head Office",
       icon: <Navigation className="w-5 h-5" />,
       address: [
         "1st Floor, Siddhi Pooja Business Center, Office No, 6 & 7, Sharanpur Rd, near Lions Club Garden, New Pandit Colony, Nashik, Maharashtra 422002",
       ],
       phone: "+91 98905 33709",
       email: "connect@kabraemporium.com",
-      timings: "Mon-Sat: 10:00 AM - 8:00 PM",
+      timings: "Mon-Sat: 10:00 AM - 7:00 PM",
       mapUrl:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.7852832528936!2d73.76411747497926!3d19.997212181406668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeb84b8a16f99%3A0x2cf5d5ac4ce6e90c!2sNashik%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.205075052323!2d73.78044116378919!3d19.9999059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeb3e46b17887%3A0x874f7c090d8d605d!2sKabra%20The%20Fashionista%20-%20Head%20Office!5e0!3m2!1sen!2sin!4v1770092925908!5m2!1sen!2sin",
       coordinates: "19.9972° N, 73.7907° E",
     },
   ];
@@ -250,7 +250,7 @@ const ContactPage = () => {
                   <button
                     key={address.id}
                     onClick={() => handleAddressClick(index)}
-                    className={`px-4 py-2.5 rounded-lg font-medium text-sm whitespace-nowrap transition-all duration-300 ${
+                    className={`px-2 py-2.5 rounded-lg font-medium text-sm whitespace-nowrap transition-all duration-300 ${
                       activeMap === index
                         ? "bg-gradient-to-r from-orange-500 to-amber-500 text-white shadow-lg"
                         : "bg-gray-100 text-gray-700 hover:bg-gray-200"
@@ -474,10 +474,14 @@ const ContactPage = () => {
                     >
                       <option value="">Select preferred location</option>
                       <option value="pandit-colony">
-                        Pandit Colony - Nashik
+                        Pandit Colony Showroom
                       </option>
-                      <option value="mumbai">Mumbai Showroom</option>
-                      <option value="nashik-road">Nashik Road Showroom</option>
+                      <option value="pandit-colony">
+                        Pandit Colony Showroom
+                      </option>
+                      <option value="pandit-colony">
+                        Pandit Colony Showroom
+                      </option>
                     </select>
                     <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:pr-3 pointer-events-none">
                       <svg
@@ -518,6 +522,20 @@ const ContactPage = () => {
                   </div>
                 </div>
 
+                {/* Agreement Checkbox */}
+                <div className="flex items-start space-x-3">
+                  <input
+                    type="checkbox"
+                    defaultChecked
+                    className="mt-1 w-4 h-4 text-blue-600 border-white/20 rounded focus:ring-blue-500"
+                  />
+                  <span className="text-sm ">
+                    By clicking this, you agree to disclose your personal
+                    information to Kabra Emporium for contacting you via SMS,
+                    Email, RCS Messages, Calls, and WhatsApp.
+                  </span>
+                </div>
+
                 <div className="pt-2 sm:pt-4">
                   <button
                     type="submit"
@@ -540,9 +558,6 @@ const ContactPage = () => {
                       </>
                     )}
                   </button>
-                  <p className="text-center text-gray-500 text-xs sm:text-sm mt-2">
-                    We typically respond within 24 hours
-                  </p>
                 </div>
               </form>
             </div>

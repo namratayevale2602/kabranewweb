@@ -62,66 +62,84 @@ const Navbar = () => {
             {
               label: "Kanchipuram Sarees",
               subItems: [
-                { label: "Kanchipuram Pure Silk Sarees", slug: "sarees" },
-                { label: "Kanchipuram Pure Half Fine Jari", slug: "sarees" },
+                {
+                  label: "Kanchipuram Pure Silk Sarees",
+                  slug: "kanchipuram-pure-silk",
+                },
+                {
+                  label: "Kanchipuram Pure Half Fine Jari",
+                  slug: "kanchipuram-half-fine-jari",
+                },
               ],
             },
             {
               label: "Banarasi Sarees",
               subItems: [
-                { label: "Banarasi Silk Sarees", slug: "sarees" },
-                { label: "Banarasi Kadhwa Sarees", slug: "sarees" },
-                { label: "Banarasi Tussar Weaving", slug: "sarees" },
-                { label: "Banarasi Organza", slug: "sarees" },
-                { label: "Banarasi Georgette Saree", slug: "sarees" },
-                { label: "Banarasi Tissue Saree", slug: "sarees" },
+                { label: "Banarasi Silk Sarees", slug: "banarasi-silk" },
+                { label: "Banarasi Kadhwa Sarees", slug: "banarasi-kadhwa" },
+                { label: "Banarasi Tussar Weaving", slug: "banarasi-tussar" },
+                { label: "Banarasi Organza", slug: "banarasi-organza" },
+                {
+                  label: "Banarasi Georgette Saree",
+                  slug: "banarasi-georgette",
+                },
+                { label: "Banarasi Tissue Saree", slug: "banarasi-tissue" },
               ],
             },
             {
               label: "Designer Sarees",
               subItems: [
-                { label: "Pure Designer Embroidery Saree", slug: "sarees" },
-                { label: "Fancy Sarees", slug: "sarees" },
-                { label: "Organza Sarees", slug: "sarees" },
-                { label: "Bandhani Sarees", slug: "sarees" },
-                { label: "Fancy Weaving Saree", slug: "sarees" },
-                { label: "Ready Blouse Sarees", slug: "sarees" },
-                { label: "Pure Tussar Embroidery Sarees", slug: "sarees" },
-                { label: "Ready To Wear Saree", slug: "sarees" },
-                { label: "Handloom Silk Embroidery Sarees", slug: "sarees" },
+                {
+                  label: "Pure Designer Embroidery Saree",
+                  slug: "pure-designer-embroidery",
+                },
+                { label: "Fancy Sarees", slug: "fancy-sarees" },
+                { label: "Organza Sarees", slug: "organza-sarees" },
+                { label: "Bandhani Sarees", slug: "bandhani-sarees" },
+                { label: "Fancy Weaving Saree", slug: "fancy-weaving" },
+                { label: "Ready Blouse Sarees", slug: "ready-blouse" },
+                {
+                  label: "Pure Tussar Embroidery Sarees",
+                  slug: "pure-tussar-embroidery",
+                },
+                { label: "Ready To Wear Saree", slug: "ready-to-wear" },
+                {
+                  label: "Handloom Silk Embroidery Sarees",
+                  slug: "handloom-silk-embroidery",
+                },
               ],
             },
             {
               label: "Pure Handloom Silk Saree",
               subItems: [
-                { label: "Handloom Sarees", slug: "sarees" },
-                { label: "Gadwal Silk", slug: "sarees" },
-                { label: "Paithani Sarees", slug: "sarees" },
-                { label: "Chanderi Saree", slug: "sarees" },
-                { label: "Ikkat & Patola Saree", slug: "sarees" },
-                { label: "Keta Silk Saree", slug: "sarees" },
-                { label: "Patan Patola", slug: "sarees" },
-                { label: "Pashmina Sarees", slug: "sarees" },
+                { label: "Handloom Sarees", slug: "handloom-sarees" },
+                { label: "Gadwal Silk", slug: "gadwal-silk" },
+                { label: "Paithani Sarees", slug: "paithani-sarees" },
+                { label: "Chanderi Saree", slug: "chanderi-saree" },
+                { label: "Ikkat & Patola Saree", slug: "ikkat-patola" },
+                { label: "Keta Silk Saree", slug: "keta-silk" },
+                { label: "Patan Patola", slug: "patan-patola" },
+                { label: "Pashmina Sarees", slug: "pashmina-sarees" },
               ],
             },
             {
               label: "Printed Saree",
               subItems: [
-                { label: "Designer Printed Saree", slug: "sarees" },
-                { label: "Tussar Printed Saree", slug: "sarees" },
-                { label: "Kalamkari Silk Saree", slug: "sarees" },
-                { label: "Silk Printed Saree", slug: "sarees" },
+                { label: "Designer Printed Saree", slug: "designer-printed" },
+                { label: "Tussar Printed Saree", slug: "tussar-printed" },
+                { label: "Kalamkari Silk Saree", slug: "kalamkari-silk" },
+                { label: "Silk Printed Saree", slug: "silk-printed" },
               ],
             },
             {
               label: "Occasion",
               subItems: [
-                { label: "Wedding Saree", slug: "sarees" },
-                { label: "Festive Wear Saree", slug: "sarees" },
-                { label: "Party Wear Saree", slug: "sarees" },
-                { label: "Mehendi Sarees", slug: "sarees" },
-                { label: "Reception sarees", slug: "sarees" },
-                { label: "Haldi Sarees", slug: "sarees" },
+                { label: "Wedding Saree", slug: "wedding-saree" },
+                { label: "Festive Wear Saree", slug: "festive-wear" },
+                { label: "Party Wear Saree", slug: "party-wear-saree" },
+                { label: "Mehendi Sarees", slug: "mehendi-sarees" },
+                { label: "Reception sarees", slug: "reception-sarees" },
+                { label: "Haldi Sarees", slug: "haldi-sarees" },
               ],
             },
           ],
@@ -132,25 +150,25 @@ const Navbar = () => {
             {
               label: "Style",
               subItems: [
-                { label: "Ready To Ship", slug: "lehengas" },
-                { label: "Bridal Lehenga", slug: "lehengas" },
-                { label: "Designer Lehenga", slug: "lehengas" },
-                { label: "Jacket Lehenga", slug: "lehengas" },
-                { label: "Bridesmaids Lehenga", slug: "lehengas" },
-                { label: "Crop Top Lehenga", slug: "lehengas" },
-                { label: "Bandhani Lehenga", slug: "lehengas" },
-                { label: "Fishcut Lehenga", slug: "lehengas" },
+                { label: "Ready To Ship", slug: "ready-to-ship-lehenga" },
+                { label: "Bridal Lehenga", slug: "bridal-lehenga" },
+                { label: "Designer Lehenga", slug: "designer-lehenga" },
+                { label: "Jacket Lehenga", slug: "jacket-lehenga" },
+                { label: "Bridesmaids Lehenga", slug: "bridesmaids-lehenga" },
+                { label: "Crop Top Lehenga", slug: "crop-top-lehenga" },
+                { label: "Bandhani Lehenga", slug: "bandhani-lehenga" },
+                { label: "Fishcut Lehenga", slug: "fishcut-lehenga" },
               ],
             },
             {
               label: "Occasions",
               subItems: [
-                { label: "Wedding Lehenga", slug: "lehengas" },
-                { label: "Reception Lehenga", slug: "lehengas" },
-                { label: "Party Wear Lehenga", slug: "lehengas" },
-                { label: "Mehendi Lehenga", slug: "lehengas" },
-                { label: "Sangeet Lehenga", slug: "lehengas" },
-                { label: "Engagement Lehenga", slug: "lehengas" },
+                { label: "Wedding Lehenga", slug: "wedding-lehenga" },
+                { label: "Reception Lehenga", slug: "reception-lehenga" },
+                { label: "Party Wear Lehenga", slug: "party-wear-lehenga" },
+                { label: "Mehendi Lehenga", slug: "mehendi-lehenga" },
+                { label: "Sangeet Lehenga", slug: "sangeet-lehenga" },
+                { label: "Engagement Lehenga", slug: "engagement-lehenga" },
               ],
             },
           ],
@@ -161,21 +179,41 @@ const Navbar = () => {
             {
               label: "Style",
               subItems: [
-                { label: "Readymade Suites", slug: "salwarsuite" },
-                { label: "Anarkali", slug: "salwarsuite" },
-                { label: "Straight Cut Suit", slug: "salwarsuite" },
-                { label: "Sharara Suit", slug: "salwarsuite" },
-                { label: "Palazzo Suit", slug: "salwarsuite" },
+                { label: "Readymade Suites", slug: "readymade-suites" },
+                { label: "Anarkali", slug: "anarkali" },
+                { label: "Straight Cut Suit", slug: "straight-cut" },
+                { label: "Sharara Suit", slug: "sharara-suit" },
+                { label: "Palazzo Suit", slug: "palazzo-suit" },
               ],
             },
-
+            {
+              label: "Plus Size & Special",
+              subItems: [
+                { label: "Plus Size Salwar Kameez", slug: "plus-size" },
+                { label: "Indowestern", slug: "indowestern" },
+                { label: "Evening Look", slug: "evening-look" },
+                { label: "Bridal Gowns", slug: "bridal-gowns" },
+              ],
+            },
             {
               label: "Unstitched Salwars",
               subItems: [
-                { label: "Embroidery Unstitched Salwars", slug: "salwarsuite" },
-                { label: "Cotton Unstitched Salwars", slug: "salwarsuite" },
-                { label: "Banarasi Unstitched Salwars", slug: "salwarsuite" },
-                { label: "Paithani Unstitched Salwars", slug: "salwarsuite" },
+                {
+                  label: "Embroidery Unstitched Salwars",
+                  slug: "embroidery-unstitched",
+                },
+                {
+                  label: "Cotton Unstitched Salwars",
+                  slug: "cotton-unstitched",
+                },
+                {
+                  label: "Banarasi Unstitched Salwars",
+                  slug: "banarasi-unstitched",
+                },
+                {
+                  label: "Paithani Unstitched Salwars",
+                  slug: "paithani-unstitched",
+                },
               ],
             },
           ],
@@ -183,7 +221,15 @@ const Navbar = () => {
       ],
     },
   ];
-
+  const contactInfo = {
+    phone: "+919890533709",
+    whatsapp: "+919890533709", // Can be same as phone
+    whatsappMessage:
+      "Hello Kabra Emporium, I would like to know more about your collections.",
+    instagram:
+      "https://www.instagram.com/kabra.emporium?igsh=MW41dDByaGV3dWNjcg%3D%3D&utm_source=qr",
+    facebook: "https://www.facebook.com/kabrasarees",
+  };
   const mobileNavItems = [
     {
       icon: <Home size={20} />,
@@ -203,7 +249,7 @@ const Navbar = () => {
   ];
 
   const handleCategoryClick = (slug) => {
-    navigate(`/Categorydetail/${slug}`);
+    navigate(`/product/${slug}`);
     setIsSidebarOpen(false);
   };
 
@@ -407,7 +453,7 @@ const Navbar = () => {
                 <button
                   key={item.name}
                   onClick={() => {
-                    navigate(`/Categorydetail/${item.slug}`);
+                    navigate(`/product/${item.slug}`);
                     setIsSearchOpen(false);
                   }}
                   className="px-3 py-1.5 bg-[#eb8749]/10 text-[#7b3306] rounded-full text-sm hover:bg-[#eb8749]/20 transition-colors"
@@ -536,6 +582,20 @@ const Navbar = () => {
                   ))}
                 </div>
               </div>
+              <button
+                onClick={() => {
+                  window.open(
+                    `https://wa.me/${contactInfo.whatsapp}?text=${encodeURIComponent(
+                      contactInfo.whatsappMessage,
+                    )}`,
+                    "_blank",
+                  );
+                  setIsSidebarOpen(false);
+                }}
+                className="mx-auto w-fit text-center block mt-5 py-2 px-6 bg-[#7b3306] text-white rounded"
+              >
+                Enquire Now
+              </button>
             </div>
           </div>
         </div>

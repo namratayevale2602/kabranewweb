@@ -131,7 +131,7 @@ const TopCategories = () => {
               viewport={{ once: true }}
             >
               <Link
-                to={`/Categorydetail/${topCategories[0].slug}`}
+                to={`${topCategories[0].link}`}
                 className="block bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group"
               >
                 <div className="relative h-[300px]">
@@ -162,7 +162,7 @@ const TopCategories = () => {
                   viewport={{ once: true }}
                 >
                   <Link
-                    to={`/Categorydetail/${category.slug}`}
+                    to={`${topCategories[0].link}`}
                     className="block bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group"
                   >
                     <div className="relative h-[140px]">

@@ -15,6 +15,7 @@ import OccasionCategoryDetail from "./pages/OccasionDetail/OccasionCategoryDetai
 import About from "./pages/aboutus/About";
 import TermsAndConditions from "./pages/policy/TermsAndConditions";
 import PrivacyPolicy from "./pages/policy/PrivacyPolicy";
+import ProductDetail from "./pages/Categorydetail/ProductDetail";
 
 function App() {
   const router = createBrowserRouter(
@@ -24,6 +25,7 @@ function App() {
         <Route path="contact" element={<Contact />} />
         <Route path="about" element={<About />} />
         <Route path="Categorydetail/:slug" element={<Categorydetail />} />
+        <Route path="/product/:slug" element={<ProductDetail />} />
         {/* <Route path="occasion/:slug" element={<OccasionCategory />} /> */}
         <Route path="occasion" element={<OccasionCategory />} />
         <Route path="occasion/:slug" element={<OccasionCategoryDetail />} />

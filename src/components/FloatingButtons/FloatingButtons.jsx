@@ -9,7 +9,7 @@ function FloatingButtons() {
     phone: "+919890533709",
     whatsapp: "+919890533709", // Can be same as phone
     whatsappMessage:
-      "Hello%20RichSol%20IT%20Solutions%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services.",
+      "Hello Kabra Emporium, I would like to know more about your collections.",
     instagram:
       "https://www.instagram.com/kabra.emporium?igsh=MW41dDByaGV3dWNjcg%3D%3D&utm_source=qr",
     facebook: "https://www.facebook.com/kabrasarees",

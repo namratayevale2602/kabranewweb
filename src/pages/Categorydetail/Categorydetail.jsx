@@ -1,421 +1,110 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import * as images from "../../assets";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { categoryData } from "../../constant/Home/categoryData"; // Import from external file
 
-// Your complete category data structure
-const categoryData = {
-  sarees: {
-    title: "Sarees Collection",
-    description: "Premium silk sarees for all occasions.",
-    subCategories: [
-      {
-        name: "Kanchipuram Sarees",
-        children: [
-          {
-            name: "Kanchipuram Pure Silk Sarees",
-            slug: "kanchipuram-pure-silk",
-            images: [
-              images.KanchipuramBrocket,
-              images.kanchipuramsaree1,
-              images.kanchipuramsaree2,
-            ],
-          },
-          {
-            name: "Kanchipuram Pure Half Fine Jari",
-            slug: "kanchipuram-half-fine-jari",
-            images: [
-              images.KanchipuramPureHalfFineJari,
-              images.kanchipuram_half_fine2,
-            ],
-          },
-        ],
-      },
-      {
-        name: "Banarasi Sarees",
-        children: [
-          {
-            name: "Banarasi Silk Sarees",
-            slug: "banarasi-silk",
-            images: [images.banarasi1, images.banarasi2],
-          },
-          {
-            name: "Banarasi Kadhwa Sarees",
-            slug: "banarasi-kadhwa",
-            images: [images.BanarasiKadhwa],
-          },
-          {
-            name: "Banarasi Tussar Weaving",
-            slug: "banarasi-tussar",
-            images: [images.PureTussarEmbroidery],
-          },
-          {
-            name: "Banarasi Organza",
-            slug: "banarasi-organza",
-            images: [images.BanarasiOrganza],
-          },
-          {
-            name: "Banarasi Georgette Saree",
-            slug: "banarasi-georgette",
-            images: [images.BanarasiGeorgette],
-          },
-          {
-            name: "Banarasi Tissue Saree",
-            slug: "banarasi-tissue",
-            images: [images.BanarasiTissue],
-          },
-        ],
-      },
-      {
-        name: "Designer Sarees",
-        children: [
-          {
-            name: "Pure Designer Embroidery Saree",
-            slug: "pure-designer-embroidery",
-            images: [
-              images.desginerSaree1,
-              images.desginerSaree2,
-              images.PureDesignerEmbroidery,
-            ],
-          },
-          {
-            name: "Fancy Sarees",
-            slug: "fancy-sarees",
-            images: [images.FancySaree],
-          },
-          {
-            name: "Organza Sarees",
-            slug: "organza-sarees",
-            images: [images.OrganzaSaree],
-          },
-          {
-            name: "Bandhani Sarees",
-            slug: "bandhani-sarees",
-            images: [images.BandhaniSaree],
-          },
-          {
-            name: "Fancy Weaving Saree",
-            slug: "fancy-weaving",
-            images: [images.banarasikadhwa, images.banarasikadhwa1],
-          },
-          {
-            name: "Ready Blouse Sarees",
-            slug: "ready-blouse",
-            images: [images.banarasikadhwa, images.banarasikadhwa1],
-          },
-          {
-            name: "Pure Tussar Embroidery Sarees",
-            slug: "pure-tussar-embroidery",
-            images: [images.PureTussarEmbroidery],
-          },
-          {
-            name: "Ready To Wear Saree",
-            slug: "ready-to-wear",
-            images: [images.banarasikadhwa, images.banarasikadhwa1],
-          },
-          {
-            name: "Handloom Silk Embroidery Sarees",
-            slug: "handloom-silk-embroidery",
-            images: [images.banarasikadhwa, images.banarasikadhwa1],
-          },
-        ],
-      },
-      {
-        name: "Pure Handloom Silk Saree",
-        children: [
-          {
-            name: "Handloom Sarees",
-            slug: "handloom-sarees",
-            images: [
-              images.pureHandloomSilk,
-              images.pureHandloomSilk1,
-              images.banarasisilk3,
-            ],
-          },
-          {
-            name: "Gadwal Silk",
-            slug: "gadwal-silk",
-            images: [images.banarasikadhwa, images.banarasikadhwa1],
-          },
-          {
-            name: "Paithani Sarees",
-            slug: "paithani-sarees",
-            images: [images.banarasikadhwa, images.banarasikadhwa1],
-          },
-          {
-            name: "Chanderi Saree",
-            slug: "chanderi-saree",
-            images: [images.banarasikadhwa, images.banarasikadhwa1],
-          },
-          {
-            name: "Ikkat & Patola Saree",
-            slug: "ikkat-patola",
-            images: [images.banarasikadhwa, images.banarasikadhwa1],
-          },
-          {
-            name: "Keta Silk Saree",
-            slug: "keta-silk",
-            images: [images.banarasikadhwa, images.banarasikadhwa1],
-          },
-          {
-            name: "Patan Patola",
-            slug: "patan-patola",
-            images: [images.banarasikadhwa, images.banarasikadhwa1],
-          },
-          {
-            name: "Pashmina Sarees",
-            slug: "pashmina-sarees",
-            images: [images.banarasikadhwa, images.banarasikadhwa1],
-          },
-        ],
-      },
-      {
-        name: "Printed Saree",
-        children: [
-          {
-            name: "Designer Printed Saree",
-            slug: "designer-printed",
-            images: [
-              images.banarasisilk,
-              images.banarasisilk1,
-              images.banarasisilk3,
-            ],
-          },
-          {
-            name: "Tussar Printed Saree",
-            slug: "tussar-printed",
-            images: [images.banarasikadhwa, images.banarasikadhwa1],
-          },
-          {
-            name: "Kalamkari Silk Saree",
-            slug: "kalamkari-silk",
-            images: [images.banarasikadhwa, images.banarasikadhwa1],
-          },
-          {
-            name: "Silk Printed Saree",
-            slug: "silk-printed",
-            images: [images.banarasikadhwa, images.banarasikadhwa1],
-          },
-        ],
-      },
-      {
-        name: "Occasion",
-        children: [
-          {
-            name: "Wedding Saree",
-            slug: "wedding-saree",
-            images: [
-              images.banarasisilk,
-              images.banarasisilk1,
-              images.banarasisilk3,
-            ],
-          },
-          {
-            name: "Festive Wear Saree",
-            slug: "festive-wear",
-            images: [images.banarasikadhwa, images.banarasikadhwa1],
-          },
-          {
-            name: "Party Wear Saree",
-            slug: "party-wear-saree",
-            images: [images.banarasikadhwa, images.banarasikadhwa1],
-          },
-          {
-            name: "Mehendi Sarees",
-            slug: "mehendi-sarees",
-            images: [images.banarasikadhwa, images.banarasikadhwa1],
-          },
-          {
-            name: "Reception sarees",
-            slug: "reception-sarees",
-            images: [images.banarasikadhwa, images.banarasikadhwa1],
-          },
-          {
-            name: "Haldi Sarees",
-            slug: "haldi-sarees",
-            images: [images.banarasikadhwa, images.banarasikadhwa1],
-          },
-        ],
-      },
-    ],
-  },
-  lehengas: {
-    title: "Lehenga Collection",
-    description: "Premium lehengas for weddings & celebrations.",
-    subCategories: [
-      {
-        name: "Style",
-        children: [
-          {
-            name: "Ready To Ship",
-            slug: "ready-to-ship-lehenga",
-            images: [images.bridallehenga, images.bridallehenga1],
-          },
-          {
-            name: "Bridal Lehenga",
-            slug: "bridal-lehenga",
-            images: [images.bridallehenga, images.bridallehenga1],
-          },
-          {
-            name: "Designer Lehenga",
-            slug: "designer-lehenga",
-            images: [images.designerlehenga, images.designerlehenga1],
-          },
-          {
-            name: "Jacket Lehenga",
-            slug: "jacket-lehenga",
-            images: [images.bridallehenga, images.bridallehenga1],
-          },
-          {
-            name: "Bridesmaids Lehenga",
-            slug: "bridesmaids-lehenga",
-            images: [images.bridallehenga, images.bridallehenga1],
-          },
-          {
-            name: "Crop Top Lehenga",
-            slug: "crop-top-lehenga",
-            images: [images.bridallehenga, images.bridallehenga1],
-          },
-          {
-            name: "Bandhani Lehenga",
-            slug: "bandhani-lehenga",
-            images: [images.bridallehenga, images.bridallehenga1],
-          },
-          {
-            name: "Fishcut Lehenga",
-            slug: "fishcut-lehenga",
-            images: [images.bridallehenga, images.bridallehenga1],
-          },
-        ],
-      },
-      {
-        name: "Occasions",
-        children: [
-          {
-            name: "Wedding Lehenga",
-            slug: "wedding-lehenga",
-            images: [images.bridallehenga, images.bridallehenga1],
-          },
-          {
-            name: "Reception Lehenga",
-            slug: "reception-lehenga",
-            images: [images.bridallehenga, images.bridallehenga1],
-          },
-          {
-            name: "Party Wear Lehenga",
-            slug: "party-wear-lehenga",
-            images: [images.designerlehenga, images.designerlehenga1],
-          },
-          {
-            name: "Mehendi Lehenga",
-            slug: "mehendi-lehenga",
-            images: [images.bridallehenga, images.bridallehenga1],
-          },
-          {
-            name: "Sangeet Lehenga",
-            slug: "sangeet-lehenga",
-            images: [images.bridallehenga, images.bridallehenga1],
-          },
-          {
-            name: "Engagement Lehenga",
-            slug: "engagement-lehenga",
-            images: [images.bridallehenga, images.bridallehenga1],
-          },
-        ],
-      },
-    ],
-  },
-  salwarsuite: {
-    title: "Salwar Suits",
-    description: "Traditional and designer Salwar Suits for every occasion.",
-    subCategories: [
-      {
-        name: "Style",
-        children: [
-          {
-            name: "Readymade Suites",
-            slug: "readymade-suites",
-            images: [images.bridallehenga, images.bridallehenga1],
-          },
-          {
-            name: "Anarkali",
-            slug: "anarkali",
-            images: [images.bridallehenga, images.bridallehenga1],
-          },
-          {
-            name: "Straight Cut Suit",
-            slug: "straight-cut",
-            images: [images.designerlehenga, images.designerlehenga1],
-          },
-          {
-            name: "Sharara Suit",
-            slug: "sharara-suit",
-            images: [images.bridallehenga, images.bridallehenga1],
-          },
-          {
-            name: "Palazzo Suit",
-            slug: "palazzo-suit",
-            images: [images.bridallehenga, images.bridallehenga1],
-          },
-        ],
-      },
-      {
-        name: "Plus Size & Special",
-        children: [
-          {
-            name: "Plus Size Salwar Kameez",
-            slug: "plus-size",
-            images: [images.bridallehenga, images.bridallehenga1],
-          },
-          {
-            name: "Indowestern",
-            slug: "indowestern",
-            images: [images.bridallehenga, images.bridallehenga1],
-          },
-          {
-            name: "Evening Look",
-            slug: "evening-look",
-            images: [images.bridallehenga, images.bridallehenga1],
-          },
-          {
-            name: "Bridal Gowns",
-            slug: "bridal-gowns",
-            images: [images.bridallehenga, images.bridallehenga1],
-          },
-        ],
-      },
-      {
-        name: "Unstitched Salwars",
-        children: [
-          {
-            name: "Embroidery Unstitched Salwars",
-            slug: "embroidery-unstitched",
-            images: [images.bridallehenga, images.bridallehenga1],
-          },
-          {
-            name: "Cotton Unstitched Salwars",
-            slug: "cotton-unstitched",
-            images: [images.bridallehenga, images.bridallehenga1],
-          },
-          {
-            name: "Banarasi Unstitched Salwars",
-            slug: "banarasi-unstitched",
-            images: [images.designerlehenga, images.designerlehenga1],
-          },
-          {
-            name: "Paithani Unstitched Salwars",
-            slug: "paithani-unstitched",
-            images: [images.bridallehenga, images.bridallehenga1],
-          },
-        ],
-      },
-    ],
-  },
+// ImageSlider Component
+const ImageSlider = ({ images, productName }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [touchStart, setTouchStart] = useState(null);
+  const [touchEnd, setTouchEnd] = useState(null);
+
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1,
+    );
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1,
+    );
+  };
+
+  const goToSlide = (index) => {
+    setCurrentIndex(index);
+  };
+
+  // Touch handlers for mobile swipe
+  const handleTouchStart = (e) => {
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > 50;
+    const isRightSwipe = distance < -50;
+
+    if (isLeftSwipe) {
+      nextSlide();
+    }
+    if (isRightSwipe) {
+      prevSlide();
+    }
+
+    setTouchStart(null);
+    setTouchEnd(null);
+  };
+
+  if (images.length === 0) return null;
+
+  return (
+    <div className="relative overflow-hidden rounded-t-2xl">
+      {/* Main Image */}
+      <div
+        className="relative w-full h-50 md:h-80 object-cover transition-transform duration-500 ease-in-out"
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+      >
+        <img
+          src={images[currentIndex]}
+          alt={`${productName} - ${currentIndex + 1}`}
+          className="w-full h-full object-cover"
+          loading="lazy"
+        />
+
+        {/* Navigation Arrows (only show if multiple images) */}
+        {images.length > 1 && (
+          <>
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                prevSlide();
+              }}
+              className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white p-1 md:p-2 rounded-full shadow-lg transition-all hover:scale-110 z-10"
+              aria-label="Previous image"
+            >
+              <ChevronLeft className="w-4 h-4 md:w-5 md:h-5 text-gray-800" />
+            </button>
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                nextSlide();
+              }}
+              className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white p-1 md:p-2 rounded-full shadow-lg transition-all hover:scale-110 z-10"
+              aria-label="Next image"
+            >
+              <ChevronRight className="w-4 h-4 md:w-5 md:h-5 text-gray-800" />
+            </button>
+          </>
+        )}
+      </div>
+    </div>
+  );
 };
 
 export default function Categorydetail() {
   const { slug } = useParams();
   const navigate = useNavigate();
-  const data = categoryData[slug];
+  const data = categoryData[slug]; // Use imported categoryData
 
   const [selectedCategory, setSelectedCategory] = useState(
     data?.subCategories?.[0] || null,
@@ -463,7 +152,6 @@ export default function Categorydetail() {
               {data.title}
             </h1>
             <div className="w-20 h-1 bg-amber-500 my-2"></div>
-            {/* <p className="text-gray-600 max-w-3xl">{data.description}</p> */}
           </div>
         </div>
       </div>
@@ -527,7 +215,7 @@ export default function Categorydetail() {
           </div>
         )}
 
-        {/* Product Grid */}
+        {/* Product Grid with Image Slider */}
         {selectedSub && (
           <div>
             <div className="mb-6">
@@ -548,20 +236,41 @@ export default function Categorydetail() {
                     className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
                   >
                     <div className="relative overflow-hidden">
-                      <img
-                        src={img}
-                        alt={`${selectedSub.name} - ${index + 1}`}
-                        className="w-full h-50 md:h-80 object-cover group-hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
+                      {/* Image Slider for each product */}
+                      <ImageSlider
+                        images={selectedSub.images}
+                        productName={selectedSub.name}
                       />
                       {/* Hover overlay */}
                       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300" />
                     </div>
-                    <div className="p-2 md:p-4">
-                      <h4 className="md:font-semibold text-sm text-gray-900">
-                        {selectedSub.name}
-                      </h4>
-                      <button className="md:mt-3 mt-1 w-full bg-amber-600 text-white md:py-2 py-1 rounded-lg hover:bg-amber-700 transition-colors md:font-medium text-sm">
+                    <div className="p-1 md:p-2">
+                      <button className="w-full bg-amber-600 text-white md:py-2 py-1 rounded-lg hover:bg-amber-700 transition-colors md:font-medium text-sm">
+                        Enquiry Now
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : // Show products if available
+            selectedSub.products && selectedSub.products.length > 0 ? (
+              <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+                {selectedSub.products.map((product, index) => (
+                  <div
+                    key={product.id}
+                    className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
+                  >
+                    <div className="relative overflow-hidden">
+                      {/* Image Slider for each product */}
+                      <ImageSlider
+                        images={product.images}
+                        productName={product.name}
+                      />
+                      {/* Hover overlay */}
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300" />
+                    </div>
+                    <div className="p-3">
+                      <button className="w-full bg-amber-600 text-white py-2 rounded-lg hover:bg-amber-700 transition-colors text-sm font-medium">
                         Enquiry Now
                       </button>
                     </div>
@@ -571,22 +280,22 @@ export default function Categorydetail() {
             ) : (
               <div className="text-center py-12 bg-white rounded-xl shadow">
                 <p className="text-gray-500">
-                  Images coming soon for this category
+                  Products coming soon for this category
                 </p>
               </div>
             )}
           </div>
         )}
-      </div>
 
-      {/* Empty State */}
-      {!selectedSub && (
-        <div className="text-center py-20">
-          <p className="text-gray-500 text-lg">
-            Select a category to view products
-          </p>
-        </div>
-      )}
+        {/* Empty State */}
+        {!selectedSub && (
+          <div className="text-center py-20">
+            <p className="text-gray-500 text-lg">
+              Select a category to view products
+            </p>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

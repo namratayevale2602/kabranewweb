@@ -112,20 +112,20 @@ import tussarsilkprinted1 from "./sarees/tussarsilkprinted1.png";
 
 import weddingsaree from "./sarees/weddingsaree.png";
 import weddingsaree1 from "./sarees/weddingsaree1.png";
-import desginerSaree1 from "./sarees/desginerSaree1.png";
-import desginerSaree2 from "./sarees/desginerSaree2.png";
+import desginerSaree1 from "./sarees/desginersaree1.png";
+import desginerSaree2 from "./sarees/desginersaree2.png";
 
-import desginerSreee3 from "./sarees/desginerSreee3.png";
+import desginerSreee3 from "./sarees/desginersreee3.png";
 import BanarasiGeorgette from "./sarees/banarasigeorgette.png";
 import BanarasiKadhwa from "./sarees/banarasikadhwa.png";
 import BanarasiOrganza from "./sarees/banarasiorganza.png";
 import BanarasiTissue from "./sarees/banarasitissue.png";
-import BandhaniSaree from "./sarees/BandhaniSaree.png";
-import FancySaree from "./sarees/FancySaree.png";
-import KanchipuramPureHalfFineJari from "./sarees/KanchipuramPureHalfFineJari.png";
-import OrganzaSaree from "./sarees/OrganzaSaree.png";
-import PureDesignerEmbroidery from "./sarees/PureDesignerEmbroidery.png";
-import PureTussarEmbroidery from "./sarees/PureTussarEmbroidery.png";
+import BandhaniSaree from "./sarees/bandhanisaree.png";
+import FancySaree from "./sarees/fancysaree.png";
+import KanchipuramPureHalfFineJari from "./sarees/kanchipurampurehalffinejari.png";
+import OrganzaSaree from "./sarees/organzasaree.png";
+import PureDesignerEmbroidery from "./sarees/puredesignerembroidery.png";
+import PureTussarEmbroidery from "./sarees/puretussarembroidery.png";
 
 import bandhanilehenga from "./lengha/bandhanilehenga.png";
 import bandhanilehenga1 from "./lengha/bandhanilehenga1.png";
@@ -523,4 +523,368 @@ export {
   mobilebg2,
   mobilebg3,
   mobilebg4,
+};
+
+// Sarees images
+import kachipuram2 from "../assets/saree/kanchipuramsarees/kachipuram2.jpg";
+import kachipuram2a from "../assets/saree/kanchipuramsarees/kachipuram2a.jpg";
+import kachipuram2b from "../assets/saree/kanchipuramsarees/kachipuram2b.jpg";
+import kachipuram2jari from "../assets/saree/kanchipuramsarees/kachipuram2jari.jpg";
+import kachipuram2jari1 from "../assets/saree/kanchipuramsarees/kachipuram2jari1.jpg";
+import kachipuram3 from "../assets/saree/kanchipuramsarees/kachipuram3.jpg";
+import kachipuram3a from "../assets/saree/kanchipuramsarees/kachipuram3a.jpg";
+import kachipuram3b from "../assets/saree/kanchipuramsarees/kachipuram3b.jpg";
+import kachipuram4 from "../assets/saree/kanchipuramsarees/kachipuram4.jpg";
+import kachipuram4a from "../assets/saree/kanchipuramsarees/kachipuram4a.jpg";
+import kachipuram4b from "../assets/saree/kanchipuramsarees/kachipuram4b.jpg";
+import kachipuram4c from "../assets/saree/kanchipuramsarees/kachipuram4c.jpg";
+import kachipuram5 from "../assets/saree/kanchipuramsarees/kachipuram5.jpg";
+import kachipuram5a from "../assets/saree/kanchipuramsarees/kachipuram5a.jpg";
+import kachipuram5b from "../assets/saree/kanchipuramsarees/kachipuram5b.jpg";
+import kachipuram5c from "../assets/saree/kanchipuramsarees/kachipuram5c.jpg";
+import kachipurambrocket1 from "../assets/saree/kanchipuramsarees/kachipurambrocket1.jpg";
+import kanchipurambrocket1a from "../assets/saree/kanchipuramsarees/kanchipurambrocket1a.jpg";
+import kanchipurambrocket1b from "../assets/saree/kanchipuramsarees/kanchipurambrocket1b.jpg";
+import kanchipurambrocket1c from "../assets/saree/kanchipuramsarees/kanchipurambrocket1c.jpg";
+
+import banarasitissues from "../assets/saree/banarasitissue/banarasitissue.jpeg";
+import banarasitissues1 from "../assets/saree/banarasitissue/banarasitissue1.jpeg";
+import banarsigeorgette1 from "../assets/saree/banarsigeorgette/banarsigeorgette1.jpeg";
+import banarsigeorgette2 from "../assets/saree/banarsigeorgette/banarsigeorgette2.jpeg";
+import banarsigeorgette3 from "../assets/saree/banarsigeorgette/banarsigeorgette3.jpeg";
+import banarsigeorgette4 from "../assets/saree/banarsigeorgette/banarsigeorgette4.jpeg";
+import banarsigeorgette5 from "../assets/saree/banarsigeorgette/banarsigeorgette5.jpeg";
+import banarasigeoegettemodel from "../assets/saree/banarsigeorgette/banarasigeoegettemodel.png";
+import banarasigeoegettemodelyello from "../assets/saree/banarsigeorgette/banarasigeoegettemodelyello.png";
+import banarasigeoegettemodelblue from "../assets/saree/banarsigeorgette/banarasigeoegettemodelblue.png";
+import banarasigeoegettemodelred from "../assets/saree/banarsigeorgette/banarasigeoegettemodelred.png";
+
+import banarasisilks1 from "../assets/saree/banarasisilk/banarasisilk1.jpeg";
+import banarasisilks2 from "../assets/saree/banarasisilk/banarasisilk2.jpeg";
+import banarasisilks3 from "../assets/saree/banarasisilk/banarasisilk3.jpeg";
+import banarasisilks4 from "../assets/saree/banarasisilk/banarasisilk4.jpeg";
+import banarasisilks5 from "../assets/saree/banarasisilk/banarasisilk5.jpeg";
+import banarasisilks6 from "../assets/saree/banarasisilk/banarasisilk6.jpeg";
+import banarasisilks7 from "../assets/saree/banarasisilk/banarasisilk7.jpeg";
+
+import banarasiorganza from "../assets/saree/banarasiorganza/banarasiorganza.jpeg";
+import banarasiorganzaa1 from "../assets/saree/banarasiorganza/banarasiorganza1.jpeg";
+
+import desiner1 from "../assets/saree/desiner/desiner1.jpg";
+import desiner1a from "../assets/saree/desiner/desiner1a.jpg";
+import desiner1b from "../assets/saree/desiner/desiner1b.jpg";
+import desiner2a from "../assets/saree/desiner/desiner2a.jpg";
+import desiner2b from "../assets/saree/desiner/desiner2b.jpg";
+import desiner2c from "../assets/saree/desiner/desiner2c.jpg";
+import desiner3 from "../assets/saree/desiner/desiner3.jpg";
+import desiner3a from "../assets/saree/desiner/desiner3a.jpg";
+
+import handloom1 from "../assets/saree/handloom/handloom1.jpg";
+import handloom1a from "../assets/saree/handloom/handloom1a.jpg";
+import handloom1b from "../assets/saree/handloom/handloom1b.jpg";
+import handloom1c from "../assets/saree/handloom/handloom1c.jpg";
+import handloom2 from "../assets/saree/handloom/handloom2.jpg";
+import handloom2a from "../assets/saree/handloom/handloom2a.jpg";
+import handloom2b from "../assets/saree/handloom/handloom2b.jpg";
+import handloom2c from "../assets/saree/handloom/handloom2c.jpg";
+import handloom3 from "../assets/saree/handloom/handloom3.jpg";
+import handloom3a from "../assets/saree/handloom/handloom3a.jpg";
+import handloom3b from "../assets/saree/handloom/handloom3b.jpg";
+import handloom3c from "../assets/saree/handloom/handloom3c.jpg";
+import handloom4 from "../assets/saree/handloom/handloom4.jpg";
+import handloom4a from "../assets/saree/handloom/handloom4a.jpg";
+import handloom4b from "../assets/saree/handloom/handloom4b.jpg";
+import handloom4c from "../assets/saree/handloom/handloom4c.jpg";
+import handloom5 from "../assets/saree/handloom/handloom5.jpg";
+import handloom5a from "../assets/saree/handloom/handloom5a.jpg";
+import handloom5b from "../assets/saree/handloom/handloom5b.jpg";
+import handloom5c from "../assets/saree/handloom/handloom5c.jpg";
+
+import gadwalhandloomsilk from "../assets/saree/gadwalhandloomsilk/gadwalhandloomsilk.jpeg";
+import gadwalhandloomsilk1 from "../assets/saree/gadwalhandloomsilk/gadwalhandloomsilk1.jpeg";
+import gadwalhandloomsilk2 from "../assets/saree/gadwalhandloomsilk/gadwalhandloomsilk2.jpeg";
+import gadwalhandloomsilk3 from "../assets/saree/gadwalhandloomsilk/gadwalhandloomsilk3.jpeg";
+import gadwalhandloomsilk4 from "../assets/saree/gadwalhandloomsilk/gadwalhandloomsilk4.jpeg";
+import gadwalhandloomsilk5 from "../assets/saree/gadwalhandloomsilk/gadwalhandloomsilk5.jpeg";
+import gadwalhandloomsilk6 from "../assets/saree/gadwalhandloomsilk/gadwalhandloomsilk6.jpeg";
+import gadwalhandloomsilk7 from "../assets/saree/gadwalhandloomsilk/gadwalhandloomsilk7.jpeg";
+import gadwalhandloomsilk8 from "../assets/saree/gadwalhandloomsilk/gadwalhandloomsilk8.jpeg";
+import gadwalhandloomsilk9 from "../assets/saree/gadwalhandloomsilk/gadwalhandloomsilk9.jpeg";
+import gadwalhandloomsilk10 from "../assets/saree/gadwalhandloomsilk/gadwalhandloomsilk10.jpeg";
+import gadwalhandloomsilk11 from "../assets/saree/gadwalhandloomsilk/gadwalhandloomsilk11.jpeg";
+import gadwalhandloomsilk12 from "../assets/saree/gadwalhandloomsilk/gadwalhandloomsilk12.jpeg";
+
+import handloompaithani1 from "../assets/saree/handloompaithani/handloompaithani1.jpg";
+import handloompaithani2 from "../assets/saree/handloompaithani/handloompaithani2.jpg";
+import handloompaithani2a from "../assets/saree/handloompaithani/handloompaithani2a.jpg";
+import handloompaithani3 from "../assets/saree/handloompaithani/handloompaithani3.jpg";
+import handloompaithani3a from "../assets/saree/handloompaithani/handloompaithani3a.jpg";
+import handloompaithaniself1 from "../assets/saree/handloompaithani/handloompaithaniself1.jpg";
+import handloompaithaniself1a from "../assets/saree/handloompaithani/handloompaithaniself1a.jpg";
+
+import chanderi1 from "../assets/saree/chanderi/chanderi1.jpg";
+import chanderi2 from "../assets/saree/chanderi/chanderi2.jpg";
+import chanderi3 from "../assets/saree/chanderi/chanderi3.jpg";
+import chanderi4 from "../assets/saree/chanderi/chanderi4.jpg";
+import chanderi5 from "../assets/saree/chanderi/chanderi5.jpg";
+import chanderi6 from "../assets/saree/chanderi/chanderi6.jpg";
+import chanderi7 from "../assets/saree/chanderi/chanderi7.jpg";
+import chanderi8 from "../assets/saree/chanderi/chanderi8.jpg";
+import chanderi9 from "../assets/saree/chanderi/chanderi9.jpg";
+
+import chanderitissue from "../assets/saree/chanderitissue/chanderitissue.jpeg";
+import chanderitissue1 from "../assets/saree/chanderitissue/chanderitissue1.jpeg";
+import chanderitissue2 from "../assets/saree/chanderitissue/chanderitissue2.jpeg";
+import chanderitissue3 from "../assets/saree/chanderitissue/chanderitissue3.jpeg";
+import chanderitissue4 from "../assets/saree/chanderitissue/chanderitissue4.jpeg";
+import chanderitissue5 from "../assets/saree/chanderitissue/chanderitissue5.jpeg";
+import chanderitissue6 from "../assets/saree/chanderitissue/chanderitissue6.jpeg";
+import chanderitissue7 from "../assets/saree/chanderitissue/chanderitissue7.jpeg";
+import chanderitissue8 from "../assets/saree/chanderitissue/chanderitissue8.jpeg";
+
+import kalamkari1 from "../assets/saree/kalamkari/kalamkari1.jpg";
+import kalamkari2 from "../assets/saree/kalamkari/kalamkari2.jpg";
+import kalamkari3 from "../assets/saree/kalamkari/kalamkari3.jpg";
+import kalamkari4 from "../assets/saree/kalamkari/kalamkari4.jpg";
+
+import printed1 from "../assets/saree/printed/printed1.jpg";
+import printed2 from "../assets/saree/printed/printed2.jpg";
+import printed3 from "../assets/saree/printed/printed3.jpg";
+import printed4 from "../assets/saree/printed/printed4.jpg";
+import printed5 from "../assets/saree/printed/printed5.jpg";
+
+import organza from "../assets/saree/organza/organza.jpeg";
+import organza1 from "../assets/saree/organza/organza1.jpeg";
+import organza2 from "../assets/saree/organza/organza2.jpeg";
+import organza3 from "../assets/saree/organza/organza3.jpeg";
+import organza4 from "../assets/saree/organza/organza4.jpeg";
+import organza5 from "../assets/saree/organza/organza5.jpeg";
+import organza6 from "../assets/saree/organza/organza6.jpeg";
+import organza7 from "../assets/saree/organza/organza7.jpeg";
+import organza8 from "../assets/saree/organza/organza8.jpeg";
+import organza9 from "../assets/saree/organza/organza9.jpeg";
+import organza10 from "../assets/saree/organza/organza10.jpeg";
+
+import softsilk1 from "../assets/saree/softsilk/softsilk1.jpg";
+import softsilk1a from "../assets/saree/softsilk/softsilk1a.jpg";
+import softsilk2 from "../assets/saree/softsilk/softsilk2.jpg";
+import softsilk2a from "../assets/saree/softsilk/softsilk2a.jpg";
+import softsilk3 from "../assets/saree/softsilk/softsilk3.jpg";
+import softsilk3a from "../assets/saree/softsilk/softsilk3a.jpg";
+import softsilk4 from "../assets/saree/softsilk/softsilk4.jpg";
+import softsilk4a from "../assets/saree/softsilk/softsilk4a.jpg";
+
+import ikkat1 from "../assets/saree/ikkat/ikkat1.jpeg";
+import ikkat2 from "../assets/saree/ikkat/ikkat2.jpeg";
+import ikkat3 from "../assets/saree/ikkat/ikkat3.jpeg";
+import ikkat4 from "../assets/saree/ikkat/ikkat4.jpeg";
+import ikkat5 from "../assets/saree/ikkat/ikkat5.jpeg";
+import ikkat6 from "../assets/saree/ikkat/ikkat6.jpeg";
+import ikkat7 from "../assets/saree/ikkat/ikkat7.jpeg";
+import ikkat8 from "../assets/saree/ikkat/ikkat8.jpeg";
+import ikkat9 from "../assets/saree/ikkat/ikkat9.jpeg";
+import ikkat10 from "../assets/saree/ikkat/ikkat10.jpeg";
+import ikkat11 from "../assets/saree/ikkat/ikkat11.jpeg";
+
+import kachipurammodelred from "../assets/saree/kanchipuramsarees/kachipurammodelred.png";
+import kachipuramhalffinejarimodel from "../assets/saree/kanchipuramsarees/kachipuramhalffinejarimodel.png";
+import kachipuramsilkmodelgreen from "../assets/saree/kanchipuramsarees/kachipuramsilkmodelgreen.png";
+import kachipuramsilkmodellightgreen from "../assets/saree/kanchipuramsarees/kachipuramsilkmodellightgreen.png";
+import kachipuramsilkmodelnavyblue from "../assets/saree/kanchipuramsarees/kachipuramsilkmodelnavyblue.png";
+import kachipuramsilkmodelpurple from "../assets/saree/kanchipuramsarees/kachipuramsilkmodelpurple.png";
+import banarasiorganzamodel from "../assets/saree/banarasiorganza/banarasiorganza.png";
+import banarasitiisuemodel from "../assets/saree/banarasitissue/banarasitiisuemodel.png";
+import organzamodel from "../assets/saree/organza/organzamodel.png";
+import purehandloommodelblue from "../assets/saree/handloom/purehandloommodelblue.png";
+import purehandloommodelgray from "../assets/saree/handloom/purehandloommodelgray.png";
+import purehandloommodelmarron from "../assets/saree/handloom/purehandloommodelmarron.png";
+import purehandloommodelnavyblue from "../assets/saree/handloom/purehandloommodelnavyblue.png";
+import purehandloommodelpink from "../assets/saree/handloom/purehandloommodelpink.png";
+import chanderimodelblue from "../assets/saree/chanderi/chanderimodelblue.png";
+import chanderimodeldarkgreen from "../assets/saree/chanderi/chanderimodeldarkgreen.png";
+import chanderimodeldarkpurple from "../assets/saree/chanderi/chanderimodeldarkpurple.png";
+import chanderimodelpink from "../assets/saree/chanderi/chanderimodelpink.png";
+import chanderimodelpurple from "../assets/saree/chanderi/chanderimodelpurple.png";
+import softsilkmodelgreen from "../assets/saree/softsilk/softsilkmodelgreen.png";
+import softsilkmodelnavyblue from "../assets/saree/softsilk/softsilkmodelnavyblue.png";
+import softsilkmodelyellow from "../assets/saree/softsilk/softsilkmodelyellow.png";
+import kalamkarimodelblack from "../assets/saree/kalamkari/kalamkarimodelblack.png";
+import kalamkarimodelbrown from "../assets/saree/kalamkari/kalamkarimodelbrown.png";
+import kalamkarimodelgray from "../assets/saree/kalamkari/kalamkarimodelgray.png";
+import kalamkarimodelgreen from "../assets/saree/kalamkari/kalamkarimodelgreen.png";
+import silkprontedpurple from "../assets/saree/printed/silkprontedpurple.png";
+
+export {
+  kachipuramsilkmodelgreen,
+  kachipuramsilkmodellightgreen,
+  kachipuramsilkmodelnavyblue,
+  kachipuramsilkmodelpurple,
+  kachipurammodelred,
+  kachipuramhalffinejarimodel,
+  banarasitiisuemodel,
+  banarasiorganzamodel,
+  purehandloommodelblue,
+  purehandloommodelgray,
+  purehandloommodelmarron,
+  purehandloommodelnavyblue,
+  purehandloommodelpink,
+  chanderimodelblue,
+  chanderimodeldarkgreen,
+  chanderimodeldarkpurple,
+  chanderimodelpink,
+  chanderimodelpurple,
+  softsilkmodelgreen,
+  softsilkmodelnavyblue,
+  softsilkmodelyellow,
+  kalamkarimodelblack,
+  kalamkarimodelbrown,
+  kalamkarimodelgray,
+  kalamkarimodelgreen,
+  silkprontedpurple,
+  organzamodel,
+  kachipuram2,
+  kachipuram2a,
+  kachipuram2b,
+  kachipuram2jari,
+  kachipuram2jari1,
+  kachipuram3,
+  kachipuram3a,
+  kachipuram3b,
+  kachipuram4,
+  kachipuram4a,
+  kachipuram4b,
+  kachipuram4c,
+  kachipuram5,
+  kachipuram5a,
+  kachipuram5b,
+  kachipuram5c,
+  kachipurambrocket1,
+  kanchipurambrocket1a,
+  kanchipurambrocket1b,
+  kanchipurambrocket1c,
+  banarasitissues,
+  banarasitissues1,
+  banarsigeorgette1,
+  banarsigeorgette2,
+  banarsigeorgette3,
+  banarsigeorgette4,
+  banarsigeorgette5,
+  banarasigeoegettemodel,
+  banarasigeoegettemodelblue,
+  banarasigeoegettemodelred,
+  banarasigeoegettemodelyello,
+  banarasisilks1,
+  banarasisilks2,
+  banarasisilks3,
+  banarasisilks4,
+  banarasisilks5,
+  banarasisilks6,
+  banarasisilks7,
+  banarasiorganza,
+  banarasiorganzaa1,
+  desiner1,
+  desiner1a,
+  desiner1b,
+  desiner2a,
+  desiner2b,
+  desiner2c,
+  desiner3,
+  desiner3a,
+  handloom1,
+  handloom1a,
+  handloom1b,
+  handloom1c,
+  handloom2,
+  handloom2a,
+  handloom2b,
+  handloom2c,
+  handloom3,
+  handloom3a,
+  handloom3b,
+  handloom3c,
+  handloom4,
+  handloom4a,
+  handloom4b,
+  handloom4c,
+  handloom5,
+  handloom5a,
+  handloom5b,
+  handloom5c,
+  gadwalhandloomsilk,
+  gadwalhandloomsilk1,
+  gadwalhandloomsilk2,
+  gadwalhandloomsilk3,
+  gadwalhandloomsilk4,
+  gadwalhandloomsilk5,
+  gadwalhandloomsilk6,
+  gadwalhandloomsilk7,
+  gadwalhandloomsilk8,
+  gadwalhandloomsilk9,
+  gadwalhandloomsilk10,
+  gadwalhandloomsilk11,
+  gadwalhandloomsilk12,
+  handloompaithani1,
+  handloompaithani2,
+  handloompaithani2a,
+  handloompaithani3,
+  handloompaithani3a,
+  handloompaithaniself1,
+  handloompaithaniself1a,
+  chanderi1,
+  chanderi2,
+  chanderi3,
+  chanderi4,
+  chanderi5,
+  chanderi6,
+  chanderi7,
+  chanderi8,
+  chanderi9,
+  chanderitissue,
+  chanderitissue1,
+  chanderitissue2,
+  chanderitissue3,
+  chanderitissue4,
+  chanderitissue5,
+  chanderitissue6,
+  chanderitissue7,
+  chanderitissue8,
+  kalamkari1,
+  kalamkari2,
+  kalamkari3,
+  kalamkari4,
+  printed1,
+  printed2,
+  printed3,
+  printed4,
+  printed5,
+  organza,
+  organza1,
+  organza2,
+  organza3,
+  organza4,
+  organza5,
+  organza6,
+  organza7,
+  organza8,
+  organza9,
+  organza10,
+  softsilk1,
+  softsilk1a,
+  softsilk2,
+  softsilk2a,
+  softsilk3,
+  softsilk3a,
+  softsilk4,
+  softsilk4a,
+  ikkat1,
+  ikkat2,
+  ikkat3,
+  ikkat4,
+  ikkat5,
+  ikkat6,
+  ikkat7,
+  ikkat8,
+  ikkat9,
+  ikkat10,
+  ikkat11,
 };

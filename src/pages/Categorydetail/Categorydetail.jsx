@@ -67,7 +67,7 @@ const ImageSlider = ({ images, productName }) => {
         <img
           src={images[currentIndex]}
           alt={`${productName} - ${currentIndex + 1}`}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-fill"
           loading="lazy"
         />
 
@@ -258,7 +258,7 @@ export default function Categorydetail() {
                 {selectedSub.products.map((product, index) => (
                   <div
                     key={product.id}
-                    className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
+                    className="group bg-white rounded-2xl overflow-hidden "
                   >
                     <div className="relative overflow-hidden">
                       {/* Image Slider for each product */}
@@ -266,8 +266,6 @@ export default function Categorydetail() {
                         images={product.images}
                         productName={product.name}
                       />
-                      {/* Hover overlay */}
-                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300" />
                     </div>
                     <div className="p-3">
                       <button className="w-full bg-amber-600 text-white py-2 rounded-lg hover:bg-amber-700 transition-colors text-sm font-medium">

@@ -13,55 +13,49 @@ export const categoryData = {
             slug: "kanchipuram-pure-silk",
             products: [
               {
-                id: "kpss001",
+                id: 1,
                 name: "Golden Zari Kanchipuram Saree",
-                description:
-                  "Pure Kanchipuram silk with heavy golden zari work",
-                price: "₹25,999",
+
                 images: [
-                  images.KanchipuramBrocket,
-                  images.KanchipuramBrocket1,
-                  images.KanchipuramBrocket2,
-                ],
-                features: [
-                  "Pure Silk",
-                  "Heavy Zari Work",
-                  "Traditional Motifs",
-                  "Red & Gold Color",
+                  images.kachipuramsilkmodellightgreen,
+                  images.kachipuram2,
+                  images.kachipuram2a,
+                  images.kachipuram2b,
                 ],
               },
               {
-                id: "kpss002",
+                id: 2,
                 name: "Peacock Motif Kanchipuram",
-                description: "Elegant peacock design with temple border",
-                price: "₹22,499",
+
                 images: [
-                  images.kanchipuramsaree1,
-                  images.kanchipuramsaree1_2,
-                  images.kanchipuramsaree1_3,
-                ],
-                features: [
-                  "Peacock Motifs",
-                  "Temple Border",
-                  "Green & Gold",
-                  "Contrast Pallu",
+                  images.kachipuramsilkmodelnavyblue,
+                  images.kachipuram3,
+                  images.kachipuram3a,
+                  images.kachipuram3b,
                 ],
               },
               {
-                id: "kpss003",
+                id: 3,
                 name: "Maroon Traditional Kanchipuram",
-                description: "Deep maroon silk with intricate silver zari",
-                price: "₹19,999",
+
                 images: [
-                  images.kanchipuramsaree2,
-                  images.kanchipuramsaree2_2,
-                  images.kanchipuramsaree2_3,
+                  images.kachipuramsilkmodelgreen,
+                  images.kachipuram4,
+                  images.kachipuram4a,
+                  images.kachipuram4b,
+                  images.kachipuram4c,
                 ],
-                features: [
-                  "Maroon Silk",
-                  "Silver Zari",
-                  "Floral Patterns",
-                  "Wide Border",
+              },
+              {
+                id: 4,
+                name: "Maroon Traditional Kanchipuram",
+
+                images: [
+                  images.kachipuramsilkmodelpurple,
+                  images.kachipuram5,
+                  images.kachipuram5a,
+                  images.kachipuram5b,
+                  images.kachipuram5c,
                 ],
               },
             ],
@@ -69,41 +63,25 @@ export const categoryData = {
           {
             name: "Kanchipuram Pure Half Fine Jari",
             slug: "kanchipuram-half-fine-jari",
-            images: [
-              images.KanchipuramPureHalfFineJari,
-              images.kanchipuram_half_fine2,
-            ],
             products: [
               {
                 id: "kphj001",
                 name: "Half Fine Jari Temple Border",
-                description: "Authentic half fine jari work with temple motifs",
-                price: "₹18,499",
                 images: [
-                  images.KanchipuramPureHalfFineJari,
-                  images.kanchipuram_half_fine2,
-                ],
-                features: [
-                  "Half Fine Jari",
-                  "Temple Border",
-                  "Traditional Design",
-                  "Comfort Wear",
+                  images.kachipuramhalffinejarimodel,
+                  images.kachipuram2jari,
+                  images.kachipuram2jari1,
                 ],
               },
               {
                 id: "kphj002",
                 name: "Floral Motif Half Jari",
-                description: "Delicate floral patterns with half fine jari",
-                price: "₹16,999",
                 images: [
-                  images.KanchipuramPureHalfFineJari,
-                  images.kanchipuram_half_fine2,
-                ],
-                features: [
-                  "Floral Motifs",
-                  "Lightweight",
-                  "Everyday Wear",
-                  "Multiple Colors",
+                  images.kachipurammodelred,
+                  images.kachipurambrocket1,
+                  images.kanchipurambrocket1a,
+                  images.kanchipurambrocket1b,
+                  images.kanchipurambrocket1c,
                 ],
               },
             ],
@@ -116,33 +94,41 @@ export const categoryData = {
           {
             name: "Banarasi Silk Sarees",
             slug: "banarasi-silk",
-            images: [images.banarasi1, images.banarasi2],
             products: [
               {
-                id: "bss001",
+                id: 1,
                 name: "Heavy Brocade Banarasi Silk",
-                description: "Traditional Banarasi silk with intricate brocade",
-                price: "₹32,999",
-                images: [images.banarasi1, images.banarasi2],
-                features: [
-                  "Pure Banarasi Silk",
-                  "Heavy Brocade",
-                  "Gold Zari",
-                  "Regal Look",
-                ],
+                images: [images.banarasisilks1],
               },
               {
-                id: "bss002",
+                id: 2,
                 name: "Butidar Banarasi Silk",
-                description: "Classic buta patterns on rich silk",
-                price: "₹28,499",
-                images: [images.banarasi1, images.banarasi2],
-                features: [
-                  "Buta Designs",
-                  "Fine Silk",
-                  "Royal Appearance",
-                  "Wedding Wear",
-                ],
+                images: [images.banarasisilks2],
+              },
+              {
+                id: 3,
+                name: "Butidar Banarasi Silk",
+                images: [images.banarasisilks3],
+              },
+              {
+                id: 4,
+                name: "Butidar Banarasi Silk",
+                images: [images.banarasisilks4],
+              },
+              {
+                id: 5,
+                name: "Butidar Banarasi Silk",
+                images: [images.banarasisilks5],
+              },
+              {
+                id: 6,
+                name: "Butidar Banarasi Silk",
+                images: [images.banarasisilks6],
+              },
+              {
+                id: 7,
+                name: "Butidar Banarasi Silk",
+                images: [images.banarasisilks7],
               },
             ],
           },
@@ -189,19 +175,14 @@ export const categoryData = {
           {
             name: "Banarasi Organza",
             slug: "banarasi-organza",
-            images: [images.BanarasiOrganza],
             products: [
               {
                 id: "bo001",
                 name: "Organza Banarasi Saree",
-                description: "Sheer organza with Banarasi embroidery",
-                price: "₹26,499",
-                images: [images.BanarasiOrganza],
-                features: [
-                  "Organza Fabric",
-                  "Sheer Look",
-                  "Elegant",
-                  "Party Wear",
+                images: [
+                  images.banarasiorganzamodel,
+                  images.banarasiorganza,
+                  images.banarasiorganzaa1,
                 ],
               },
             ],
@@ -209,41 +190,64 @@ export const categoryData = {
           {
             name: "Banarasi Georgette Saree",
             slug: "banarasi-georgette",
-            images: [images.BanarasiGeorgette],
             products: [
               {
-                id: "bg001",
+                id: 1,
                 name: "Georgette Banarasi Saree",
-                description: "Flowy georgette with Banarasi work",
-                price: "₹19,999",
-                images: [images.BanarasiGeorgette],
-                features: [
-                  "Georgette Fabric",
-                  "Drape-Friendly",
-                  "Comfortable",
-                  "Modern Look",
+                images: [
+                  images.banarasigeoegettemodelyello,
+                  images.banarsigeorgette1,
                 ],
+              },
+              {
+                id: 2,
+                name: "Georgette Banarasi Saree",
+                images: [
+                  images.banarasigeoegettemodel,
+                  images.banarsigeorgette2,
+                ],
+              },
+              {
+                id: 3,
+                name: "Georgette Banarasi Saree",
+                images: [
+                  images.banarasigeoegettemodelred,
+                  images.banarsigeorgette3,
+                ],
+              },
+              {
+                id: 4,
+                name: "Georgette Banarasi Saree",
+                images: [
+                  images.banarasigeoegettemodelblue,
+                  images.banarsigeorgette4,
+                ],
+              },
+              {
+                id: 5,
+                name: "Georgette Banarasi Saree",
+                images: [images.banarsigeorgette5],
               },
             ],
           },
           {
             name: "Banarasi Tissue Saree",
             slug: "banarasi-tissue",
-            images: [images.BanarasiTissue],
             products: [
               {
-                id: "bt001",
+                id: 1,
                 name: "Tissue Silk Banarasi",
-                description: "Shimmery tissue silk with traditional weave",
-                price: "₹29,999",
-                images: [images.BanarasiTissue],
-                features: [
-                  "Tissue Silk",
-                  "Shimmery Effect",
-                  "Luxurious",
-                  "Festive Wear",
+                images: [
+                  images.banarasitiisuemodel,
+                  images.banarasitissues,
+                  images.banarasitissues1,
                 ],
               },
+              // {
+              //   id: 2,
+              //   name: "Tissue Silk Banarasi",
+              //   images: [images.banarasitissues1],
+              // },
             ],
           },
         ],
@@ -254,27 +258,29 @@ export const categoryData = {
           {
             name: "Pure Designer Embroidery Saree",
             slug: "pure-designer-embroidery",
-            images: [
-              images.desginerSaree1,
-              images.desginerSaree2,
-              images.PureDesignerEmbroidery,
-            ],
             products: [
               {
-                id: "pde001",
+                id: 1,
                 name: "Contemporary Designer Saree",
-                description: "Modern design with traditional embroidery",
-                price: "₹34,999",
                 images: [
-                  images.desginerSaree1,
                   images.desginerSaree2,
-                  images.PureDesignerEmbroidery,
+                  images.desiner1,
+                  images.desiner1a,
+                  images.desiner1b,
                 ],
-                features: [
-                  "Contemporary Design",
-                  "Hand Embroidery",
-                  "Unique Patterns",
-                  "Fashion Forward",
+              },
+              {
+                id: 2,
+                name: "Contemporary Designer Saree",
+                images: [images.desiner2a, images.desiner2b, images.desiner2c],
+              },
+              {
+                id: 3,
+                name: "Contemporary Designer Saree",
+                images: [
+                  images.desginerSreee3,
+                  images.desiner3,
+                  images.desiner3a,
                 ],
               },
             ],
@@ -297,20 +303,56 @@ export const categoryData = {
           {
             name: "Organza Sarees",
             slug: "organza-sarees",
-            images: [images.OrganzaSaree],
             products: [
               {
-                id: "os001",
+                id: 1,
                 name: "Embroidered Organza Saree",
-                description: "Sheer organza with delicate embroidery",
-                price: "₹27,499",
-                images: [images.OrganzaSaree],
-                features: [
-                  "Sheer Organza",
-                  "Delicate Embroidery",
-                  "Elegant",
-                  "Special Occasion",
-                ],
+                images: [images.organzamodel, images.organza, images.organza1],
+              },
+              {
+                id: 2,
+                name: "Embroidered Organza Saree",
+                images: [images.organza2],
+              },
+              {
+                id: 3,
+                name: "Embroidered Organza Saree",
+                images: [images.organza3],
+              },
+              {
+                id: 4,
+                name: "Embroidered Organza Saree",
+                images: [images.organza4],
+              },
+              {
+                id: 5,
+                name: "Embroidered Organza Saree",
+                images: [images.organza5],
+              },
+              {
+                id: 6,
+                name: "Embroidered Organza Saree",
+                images: [images.organza6],
+              },
+              {
+                id: 7,
+                name: "Embroidered Organza Saree",
+                images: [images.organza7],
+              },
+              {
+                id: 8,
+                name: "Embroidered Organza Saree",
+                images: [images.organza8],
+              },
+              {
+                id: 9,
+                name: "Embroidered Organza Saree",
+                images: [images.organza9],
+              },
+              {
+                id: 10,
+                name: "Embroidered Organza Saree",
+                images: [images.organza10],
               },
             ],
           },
@@ -350,26 +392,6 @@ export const categoryData = {
             ],
           },
           {
-            name: "Ready Blouse Sarees",
-            slug: "ready-blouse",
-            images: [images.banarasikadhwa, images.banarasikadhwa1],
-            products: [
-              {
-                id: "rb001",
-                name: "Complete Saree Set",
-                description: "Saree with ready-to-wear matching blouse",
-                price: "₹29,499",
-                images: [images.banarasikadhwa, images.banarasikadhwa1],
-                features: [
-                  "Complete Set",
-                  "Ready Blouse",
-                  "Time-Saving",
-                  "Perfect Fit",
-                ],
-              },
-            ],
-          },
-          {
             name: "Pure Tussar Embroidery Sarees",
             slug: "pure-tussar-embroidery",
             images: [images.PureTussarEmbroidery],
@@ -404,26 +426,6 @@ export const categoryData = {
               },
             ],
           },
-          {
-            name: "Handloom Silk Embroidery Sarees",
-            slug: "handloom-silk-embroidery",
-            images: [images.banarasikadhwa, images.banarasikadhwa1],
-            products: [
-              {
-                id: "hse001",
-                name: "Handloom Silk with Embroidery",
-                description: "Traditional handloom with intricate embroidery",
-                price: "₹26,999",
-                images: [images.banarasikadhwa, images.banarasikadhwa1],
-                features: [
-                  "Handloom",
-                  "Hand Embroidery",
-                  "Artisanal",
-                  "Authentic",
-                ],
-              },
-            ],
-          },
         ],
       },
       {
@@ -432,27 +434,60 @@ export const categoryData = {
           {
             name: "Handloom Sarees",
             slug: "handloom-sarees",
-            images: [
-              images.pureHandloomSilk,
-              images.pureHandloomSilk1,
-              images.banarasisilk3,
-            ],
             products: [
               {
-                id: "hs001",
+                id: 1,
                 name: "Traditional Handloom Silk",
-                description: "Authentic handwoven silk saree",
-                price: "₹24,999",
                 images: [
-                  images.pureHandloomSilk,
-                  images.pureHandloomSilk1,
-                  images.banarasisilk3,
+                  images.purehandloommodelblue,
+                  images.handloom1,
+                  images.handloom1a,
+                  images.handloom1b,
+                  images.handloom1c,
                 ],
-                features: [
-                  "Handwoven",
-                  "Pure Silk",
-                  "Traditional",
-                  "Sustainable",
+              },
+              {
+                id: 2,
+                name: "Traditional Handloom Silk",
+                images: [
+                  images.purehandloommodelmarron,
+                  images.handloom2,
+                  images.handloom2a,
+                  images.handloom2b,
+                  images.handloom2c,
+                ],
+              },
+              {
+                id: 3,
+                name: "Traditional Handloom Silk",
+                images: [
+                  images.purehandloommodelnavyblue,
+                  images.handloom3,
+                  images.handloom3a,
+                  images.handloom3b,
+                  images.handloom3c,
+                ],
+              },
+              {
+                id: 4,
+                name: "Traditional Handloom Silk",
+                images: [
+                  images.purehandloommodelpink,
+                  images.handloom4,
+                  images.handloom4a,
+                  images.handloom4b,
+                  images.handloom4c,
+                ],
+              },
+              {
+                id: 5,
+                name: "Traditional Handloom Silk",
+                images: [
+                  images.purehandloommodelgray,
+                  images.handloom5,
+                  images.handloom5a,
+                  images.handloom5b,
+                  images.handloom5c,
                 ],
               },
             ],
@@ -460,39 +495,99 @@ export const categoryData = {
           {
             name: "Gadwal Silk",
             slug: "gadwal-silk",
-            images: [images.banarasikadhwa, images.banarasikadhwa1],
             products: [
               {
-                id: "gs001",
+                id: 1,
                 name: "Gadwal Cotton Silk",
-                description: "Unique cotton silk blend from Gadwal",
-                price: "₹17,999",
-                images: [images.banarasikadhwa, images.banarasikadhwa1],
-                features: [
-                  "Cotton Silk",
-                  "Gadwal Weave",
-                  "Comfortable",
-                  "Traditional",
-                ],
+                images: [images.gadwalhandloomsilk],
+              },
+              {
+                id: 2,
+                name: "Gadwal Cotton Silk",
+                images: [images.gadwalhandloomsilk1],
+              },
+              {
+                id: 3,
+                name: "Gadwal Cotton Silk",
+                images: [images.gadwalhandloomsilk2],
+              },
+              {
+                id: 4,
+                name: "Gadwal Cotton Silk",
+                images: [images.gadwalhandloomsilk3],
+              },
+              {
+                id: 5,
+                name: "Gadwal Cotton Silk",
+                images: [images.gadwalhandloomsilk4],
+              },
+              {
+                id: 6,
+                name: "Gadwal Cotton Silk",
+                images: [images.gadwalhandloomsilk5],
+              },
+              {
+                id: 7,
+                name: "Gadwal Cotton Silk",
+                images: [images.gadwalhandloomsilk6],
+              },
+              {
+                id: 8,
+                name: "Gadwal Cotton Silk",
+                images: [images.gadwalhandloomsilk7],
+              },
+              {
+                id: 9,
+                name: "Gadwal Cotton Silk",
+                images: [images.gadwalhandloomsilk8],
+              },
+              {
+                id: 10,
+                name: "Gadwal Cotton Silk",
+                images: [images.gadwalhandloomsilk9],
+              },
+              {
+                id: 11,
+                name: "Gadwal Cotton Silk",
+                images: [images.gadwalhandloomsilk10],
+              },
+              {
+                id: 12,
+                name: "Gadwal Cotton Silk",
+                images: [images.gadwalhandloomsilk11],
+              },
+              {
+                id: 13,
+                name: "Gadwal Cotton Silk",
+                images: [images.gadwalhandloomsilk12],
               },
             ],
           },
           {
             name: "Paithani Sarees",
             slug: "paithani-sarees",
-            images: [images.banarasikadhwa, images.banarasikadhwa1],
             products: [
               {
-                id: "ps001",
+                id: 1,
                 name: "Traditional Paithani",
-                description: "Authentic Paithani from Maharashtra",
-                price: "₹38,999",
-                images: [images.banarasikadhwa, images.banarasikadhwa1],
-                features: [
-                  "Peacock Design",
-                  "Pure Zari",
-                  "Maharashtrian",
-                  "Heritage",
+                images: [images.handloompaithani1],
+              },
+              {
+                id: 2,
+                name: "Traditional Paithani",
+                images: [images.handloompaithani2, images.handloompaithani2a],
+              },
+              {
+                id: 3,
+                name: "Traditional Paithani",
+                images: [images.handloompaithani3, images.handloompaithani3a],
+              },
+              {
+                id: 4,
+                name: "Traditional Paithani",
+                images: [
+                  images.handloompaithaniself1,
+                  images.handloompaithaniself1a,
                 ],
               },
             ],
@@ -500,80 +595,201 @@ export const categoryData = {
           {
             name: "Chanderi Saree",
             slug: "chanderi-saree",
-            images: [images.banarasikadhwa, images.banarasikadhwa1],
             products: [
               {
-                id: "cs001",
+                id: 1,
                 name: "Lightweight Chanderi",
-                description: "Sheer and lightweight Chanderi silk",
-                price: "₹15,999",
-                images: [images.banarasikadhwa, images.banarasikadhwa1],
-                features: ["Lightweight", "Sheer", "Summer Wear", "Elegant"],
+                images: [images.chanderimodelblue, images.chanderi1],
+              },
+              {
+                id: 2,
+                name: "Lightweight Chanderi",
+                images: [images.chanderimodelpurple, images.chanderi2],
+              },
+              {
+                id: 3,
+                name: "Lightweight Chanderi",
+                images: [images.chanderi3],
+              },
+              {
+                id: 4,
+                name: "Lightweight Chanderi",
+                images: [images.chanderi4],
+              },
+              {
+                id: 5,
+                name: "Lightweight Chanderi",
+                images: [images.chanderi5],
+              },
+              {
+                id: 6,
+                name: "Lightweight Chanderi",
+                images: [images.chanderimodeldarkgreen, images.chanderi6],
+              },
+              {
+                id: 7,
+                name: "Lightweight Chanderi",
+                images: [images.chanderimodeldarkpurple, images.chanderi7],
+              },
+              {
+                id: 8,
+                name: "Lightweight Chanderi",
+                images: [images.chanderi8],
+              },
+              {
+                id: 9,
+                name: "Lightweight Chanderi",
+                images: [images.chanderimodelpink, images.chanderi9],
+              },
+            ],
+          },
+          {
+            name: "Chanderi Tissue",
+            slug: "chanderi-tissue",
+            products: [
+              {
+                id: 1,
+                name: "Lightweight Chanderi",
+                images: [images.chanderitissue],
+              },
+              {
+                id: 2,
+                name: "Lightweight Chanderi",
+                images: [images.chanderitissue1],
+              },
+              {
+                id: 3,
+                name: "Lightweight Chanderi",
+                images: [images.chanderitissue2],
+              },
+              {
+                id: 4,
+                name: "Lightweight Chanderi",
+                images: [images.chanderitissue3],
+              },
+              {
+                id: 5,
+                name: "Lightweight Chanderi",
+                images: [images.chanderitissue4],
+              },
+              {
+                id: 6,
+                name: "Lightweight Chanderi",
+                images: [images.chanderitissue5],
+              },
+              {
+                id: 7,
+                name: "Lightweight Chanderi",
+                images: [images.chanderitissue6],
+              },
+              {
+                id: 8,
+                name: "Lightweight Chanderi",
+                images: [images.chanderitissue7],
+              },
+              {
+                id: 9,
+                name: "Lightweight Chanderi",
+                images: [images.chanderitissue8],
               },
             ],
           },
           {
             name: "Ikkat & Patola Saree",
             slug: "ikkat-patola",
-            images: [images.banarasikadhwa, images.banarasikadhwa1],
             products: [
               {
-                id: "ip001",
+                id: 1,
                 name: "Double Ikkat Saree",
-                description: "Traditional double ikkat weaving",
-                price: "₹42,999",
-                images: [images.banarasikadhwa, images.banarasikadhwa1],
-                features: ["Double Ikkat", "Intricate", "Artisanal", "Rare"],
+                images: [images.ikkat1],
+              },
+              {
+                id: 2,
+                name: "Double Ikkat Saree",
+                images: [images.ikkat2],
+              },
+              {
+                id: 3,
+                name: "Double Ikkat Saree",
+                images: [images.ikkat3],
+              },
+              {
+                id: 4,
+                name: "Double Ikkat Saree",
+                images: [images.ikkat4],
+              },
+              {
+                id: 5,
+                name: "Double Ikkat Saree",
+                images: [images.ikkat5],
+              },
+              {
+                id: 6,
+                name: "Double Ikkat Saree",
+                images: [images.ikkat6],
+              },
+              {
+                id: 7,
+                name: "Double Ikkat Saree",
+                images: [images.ikkat7],
+              },
+              {
+                id: 8,
+                name: "Double Ikkat Saree",
+                images: [images.ikkat8],
+              },
+              {
+                id: 9,
+                name: "Double Ikkat Saree",
+                images: [images.ikkat9],
+              },
+              {
+                id: 10,
+                name: "Double Ikkat Saree",
+                images: [images.ikkat10],
+              },
+              {
+                id: 11,
+                name: "Double Ikkat Saree",
+                images: [images.ikkat11],
               },
             ],
           },
           {
-            name: "Keta Silk Saree",
+            name: "Soft Silk Saree",
             slug: "keta-silk",
-            images: [images.banarasikadhwa, images.banarasikadhwa1],
             products: [
               {
-                id: "ks001",
+                id: 1,
                 name: "Keta Silk Traditional",
-                description: "Rustic keta silk with natural feel",
-                price: "₹19,499",
-                images: [images.banarasikadhwa, images.banarasikadhwa1],
-                features: ["Keta Silk", "Rustic", "Natural", "Traditional"],
-              },
-            ],
-          },
-          {
-            name: "Patan Patola",
-            slug: "patan-patola",
-            images: [images.banarasikadhwa, images.banarasikadhwa1],
-            products: [
-              {
-                id: "pp001",
-                name: "Authentic Patola",
-                description: "Heritage patola weaving from Patan",
-                price: "₹89,999",
-                images: [images.banarasikadhwa, images.banarasikadhwa1],
-                features: [
-                  "Heritage",
-                  "Intricate",
-                  "Collector's Item",
-                  "Patan Weave",
+                images: [
+                  images.softsilkmodelnavyblue,
+                  images.softsilk1,
+                  images.softsilk1a,
                 ],
               },
-            ],
-          },
-          {
-            name: "Pashmina Sarees",
-            slug: "pashmina-sarees",
-            images: [images.banarasikadhwa, images.banarasikadhwa1],
-            products: [
               {
-                id: "pas001",
-                name: "Pashmina Silk Blend",
-                description: "Luxurious pashmina blend saree",
-                price: "₹45,999",
-                images: [images.banarasikadhwa, images.banarasikadhwa1],
-                features: ["Pashmina Blend", "Luxurious", "Warm", "Premium"],
+                id: 2,
+                name: "Keta Silk Traditional",
+                images: [
+                  images.softsilkmodelgreen,
+                  images.softsilk2,
+                  images.softsilk2a,
+                ],
+              },
+              {
+                id: 3,
+                name: "Keta Silk Traditional",
+                images: [images.softsilk3, images.softsilk3a],
+              },
+              {
+                id: 4,
+                name: "Keta Silk Traditional",
+                images: [
+                  images.softsilkmodelyellow,
+                  images.softsilk4,
+                  images.softsilk4a,
+                ],
               },
             ],
           },
@@ -623,35 +839,57 @@ export const categoryData = {
           {
             name: "Kalamkari Silk Saree",
             slug: "kalamkari-silk",
-            images: [images.banarasikadhwa, images.banarasikadhwa1],
             products: [
               {
-                id: "kk001",
+                id: 1,
                 name: "Hand-Painted Kalamkari",
-                description: "Traditional hand-painted kalamkari art",
-                price: "₹18,999",
-                images: [images.banarasikadhwa, images.banarasikadhwa1],
-                features: [
-                  "Hand-Painted",
-                  "Traditional Art",
-                  "Unique",
-                  "Artistic",
-                ],
+                images: [images.kalamkarimodelbrown, images.kalamkari1],
+              },
+              {
+                id: 2,
+                name: "Hand-Painted Kalamkari",
+                images: [images.kalamkarimodelgray, images.kalamkari2],
+              },
+              {
+                id: 3,
+                name: "Hand-Painted Kalamkari",
+                images: [images.kalamkarimodelblack, images.kalamkari3],
+              },
+              {
+                id: 4,
+                name: "Hand-Painted Kalamkari",
+                images: [images.kalamkarimodelgreen, images.kalamkari4],
               },
             ],
           },
           {
             name: "Silk Printed Saree",
             slug: "silk-printed",
-            images: [images.banarasikadhwa, images.banarasikadhwa1],
             products: [
               {
-                id: "sp001",
+                id: 1,
                 name: "Printed Pure Silk",
-                description: "Pure silk with beautiful prints",
-                price: "₹16,999",
-                images: [images.banarasikadhwa, images.banarasikadhwa1],
-                features: ["Pure Silk", "Printed", "Vibrant", "Festive"],
+                images: [images.printed1],
+              },
+              {
+                id: 2,
+                name: "Printed Pure Silk",
+                images: [images.silkprontedpurple, images.printed2],
+              },
+              {
+                id: 3,
+                name: "Printed Pure Silk",
+                images: [images.printed3],
+              },
+              {
+                id: 4,
+                name: "Printed Pure Silk",
+                images: [images.printed4],
+              },
+              {
+                id: 5,
+                name: "Printed Pure Silk",
+                images: [images.printed5],
               },
             ],
           },

@@ -101,7 +101,7 @@ import banarasi1 from "./sarees/banarasi1.jpeg";
 import banarasi2 from "./sarees/banarasi2.jpeg";
 import pureHandloomSilk from "./sarees/pureHandloomSilk.jpeg";
 import pureHandloomSilk1 from "./sarees/pureHandloomSilk1.jpeg";
-import KanchipuramBrocket from "./sarees/kanchipurambrocket.jpeg";
+import kanchipurambrocket from "./sarees/kanchipurambrocket.jpeg";
 
 import silkprinted from "./sarees/silkprinted.png";
 import silkprinted1 from "./sarees/silkprinted1.png";

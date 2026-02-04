@@ -114,7 +114,7 @@ import weddingsaree from "./sarees/weddingsaree.png";
 import weddingsaree1 from "./sarees/weddingsaree1.png";
 import desginersaree2 from "./sarees/desginersari2.png";
 
-import desginerSreee3 from "./sarees/desginersreee3.png";
+import desginersreee3 from "./sarees/desginersreee3.png";
 import BanarasiGeorgette from "./sarees/banarasigeorgette.png";
 import BanarasiKadhwa from "./sarees/banarasikadhwa.png";
 import BanarasiOrganza from "./sarees/banarasiorganza.png";

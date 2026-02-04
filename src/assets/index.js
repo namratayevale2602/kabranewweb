@@ -112,8 +112,8 @@ import tussarsilkprinted1 from "./sarees/tussarsilkprinted1.png";
 
 import weddingsaree from "./sarees/weddingsaree.png";
 import weddingsaree1 from "./sarees/weddingsaree1.png";
-import desginerSaree1 from "./sarees/desginersaree1.png";
-import desginerSaree2 from "./sarees/desginersari2.png";
+import desginersaree1 from "./sarees/desginersaree1.png";
+import desginersaree2 from "./sarees/desginersari2.png";
 
 import desginerSreee3 from "./sarees/desginersreee3.png";
 import BanarasiGeorgette from "./sarees/banarasigeorgette.png";
@@ -307,8 +307,8 @@ export {
   pureHandloomSilk,
   pureHandloomSilk1,
   KanchipuramBrocket,
-  desginerSaree1,
-  desginerSaree2,
+  desginersaree1,
+  desginersaree2,
   desginerSreee3,
   BanarasiGeorgette,
   BanarasiKadhwa,

@@ -278,7 +278,7 @@ export const categoryData = {
                 id: 3,
                 name: "Contemporary Designer Saree",
                 images: [
-                  images.desginerSreee3,
+                  images.desginersreee3,
                   images.desiner3,
                   images.desiner3a,
                 ],
